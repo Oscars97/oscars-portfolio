@@ -1,0 +1,52 @@
+.main-container{
+    height: 60vh;
+    .content-main{
+        
+        color: white;
+        width: 60%;
+        margin: 0 auto;
+
+        .info{
+            
+             margin-top: 25%;
+             text-align: center;             
+             .main-social-media{
+                 margin-top: 2%;
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: space-around;
+                 .social-icon{
+                     margin: 0 2%;
+                     font-size: 1rem;
+                     padding: 3%;
+                     color: black;
+                     background-color: #fff;
+                     border-radius: 50px;
+                 }
+             }
+        }
+        .image-main{
+            margin: 8% auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .main-container{
+        height: 100vh;
+        .content-main{
+            
+            color: white;
+            width: 100%;
+            margin: 0 auto;
+    
+            .info{
+                 margin-top: 30%;
+                 
+            }
+            .image-main{
+                display: none;
+            }
+        }
+    }
+}
