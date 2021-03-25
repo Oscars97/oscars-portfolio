@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './styles/App.css';
 import Navbar from "./views/Nav.jsx";
 import Main from "./views/Main.js";
@@ -6,7 +6,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  // Link
 } from "react-router-dom";
 
 function App() {

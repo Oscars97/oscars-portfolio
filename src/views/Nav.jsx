@@ -15,7 +15,7 @@ const Nav = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="true">
           Óscar Sánchez
         </a>
 
@@ -26,19 +26,19 @@ const Nav = () => {
           <form className="form-inline my-2 my-lg-0">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
+              <a className="nav-link"href="true">
                 Home <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="true">
                 Link
               </a>
             </li>
             <li className="nav-item">
               <a
                 className="nav-link disabled"
-                href="#"
+                href="true"
                 tabindex="-1"
                 aria-disabled="true"
               >
