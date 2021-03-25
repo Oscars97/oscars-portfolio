@@ -1,10 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+nav {
+  font-family: 'Viga', sans-serif;
+}
+
 nav .navbar-brand {
   font-size: 2em;
 }
 
+nav .container-items .nav-item {
+  margin-left: 10%;
+  width: 30%;
+}
+
+nav .container-items .nav-item .nav-link {
+  color: white;
+}
+
+nav .container-items .nav-item:hover {
+  border-bottom: solid 2px red;
+}
+
+nav .container-items .active {
+  border-bottom: solid 2px white;
+}
+
 @media only screen and (max-width: 420px) {
   nav {
-    background-color: rgba(255, 255, 255, 0.344);
+    background-color: rgba(0, 0, 0, 0.556);
+  }
+  nav .container-items {
+    background-color: rgba(0, 0, 0, 0.268);
   }
 }
 /*# sourceMappingURL=nav.css.map */
