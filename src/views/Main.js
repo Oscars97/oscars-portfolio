@@ -16,6 +16,7 @@ const Main = () => {
                         <div className="social-icon"><i className="fab fa-whatsapp"></i></div>
                         <div className="social-icon"><i className="far fa-envelope"></i></div>
                     </div>
+                    
                 </div>
                 <div className="col-6 image-main">
                     <img src={image} />
