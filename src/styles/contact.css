@@ -1,0 +1,24 @@
+.container-form {
+  margin-top: 10%;
+  color: white;
+  height: 100vh;
+}
+
+.container-form .form {
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.159);
+  -webkit-animation: initial-image ease 2s;
+          animation: initial-image ease 2s;
+}
+
+.container-form .form .message {
+  height: 100px;
+  caret-color: #ff7a18;
+}
+
+@media only screen and (max-width: 420px) {
+  .container-form {
+    margin-top: 40%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

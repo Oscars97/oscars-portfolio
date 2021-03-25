@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 nav{
     font-family: 'Viga', sans-serif;
-    .navbar-brand{
-        font-size: 2em;
+    .brand{
+        font-size: rem;
+        background-color: rgba(255, 255, 255, 0);
+
+        button{
+            background-color: rgba(22, 1, 1, 0);
+            color: white;
+            border: none;
+        }
     }
     .container-items{
         
         .nav-item{
-            margin-left: 10%;
+            margin-left: 5%;
             width: 30%;
             
             .nav-link{
                 color: white;
+                background-color: rgba(255, 255, 255, 0);
+                border: none;
+                text-decoration: none;
+
+                &:hover, &:link{
+                    text-decoration: none;
+                }
             }
             &:hover{
                 border-bottom: solid 2px red;
