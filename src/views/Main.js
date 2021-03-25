@@ -58,6 +58,7 @@ const Main = () => {
               </a>
             </div>
           </div>
+          <button className="btn btn-block button-projects">MY WORK</button>
         </div>
         <div className="col-6 image-main">
           <img src={image} alt="something" />

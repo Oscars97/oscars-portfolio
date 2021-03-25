@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
 .main-container {
-  height: 60vh;
+  height: 100vh;
 }
 
 .main-container .content-main {
   color: white;
   width: 60%;
-  margin: 0 auto;
+  margin: 5% auto;
 }
 
 .main-container .content-main .info {
@@ -60,9 +61,10 @@
   .main-container .content-main {
     color: white;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 10%;
     float: right;
     position: relative;
+    margin-top: 10%;
   }
   .main-container .content-main h5 {
     font-size: 1.5rem;
@@ -70,11 +72,12 @@
   .main-container .content-main h1 {
     font-size: 2.5rem;
     color: rgba(255, 0, 0, 0.7);
+    font-family: 'Viga', sans-serif;
   }
   .main-container .content-main .info {
     position: absolute;
-    top: 1%;
     left: 50%;
+    margin-top: 50%;
   }
   .main-container .content-main .info .main-social-media {
     display: -webkit-box;
@@ -85,7 +88,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
-    top: -25%;
+    bottom: -15%;
     right: 150%;
   }
   .main-container .content-main .info .main-social-media .social-icon {
@@ -95,6 +98,23 @@
   .main-container .content-main .image-main {
     display: none;
   }
+}
+
+.button-projects {
+  background-color: red;
+  color: white;
+  font-weight: 10px;
+  font-size: 1.3rem;
+}
+
+.button-projects:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: white;
+  -webkit-transition: ease-out 1.5s;
+  transition: ease-out 1.5s;
+  -webkit-animation: changeColor ease-out 1.5s;
+          animation: changeColor ease-out 1.5s;
 }
 
 @-webkit-keyframes initial-text {
@@ -150,6 +170,36 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes changeColor {
+  0% {
+    background-color: #613838;
+    color: black;
+  }
+  50% {
+    background-color: #9d3939;
+    color: white;
+  }
+  100% {
+    background-color: #c92525;
+    color: black;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #613838;
+    color: black;
+  }
+  50% {
+    background-color: #9d3939;
+    color: white;
+  }
+  100% {
+    background-color: #c92525;
+    color: black;
   }
 }
 /*# sourceMappingURL=Main.css.map */

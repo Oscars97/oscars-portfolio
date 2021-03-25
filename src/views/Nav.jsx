@@ -16,10 +16,10 @@ const Nav = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <a className="navbar-brand" href="true">
-          Óscar Sánchez
+          <h1>Óscar Sánchez</h1>
         </a>
 
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <div className="collapse container-items navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
            
           </ul>
@@ -32,17 +32,17 @@ const Nav = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="true">
-                Link
+                Curriculum
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link disabled"
-                href="true"
-                tabindex="-1"
-                aria-disabled="true"
-              >
-                Disabled
+              <a className="nav-link" href="true">
+                Github
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="true">
+                Contact
               </a>
             </li>
           </ul>
