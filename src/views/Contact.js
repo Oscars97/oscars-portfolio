@@ -5,8 +5,6 @@ import "react-toastify/dist/ReactToastify.css";
 import "../styles/contact.scss";
 import emailjs from "emailjs-com";
 const Contact = () => {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
   const [redirect, setRedirect] = useState(false);
   const sendData = (e) => {
     e.preventDefault();
@@ -37,9 +35,6 @@ const Contact = () => {
           <label>Name</label>
           <input
             required
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
             type="text"
             name="name"
             className="form-control"
@@ -51,9 +46,6 @@ const Contact = () => {
           <label>Email address</label>
           <input
             required
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
             type="email"
             name="email"
             className="form-control"
@@ -64,9 +56,6 @@ const Contact = () => {
         <div className="form-group">
           <label>Message</label>
           <input
-            onChange={(e) => {
-              setMessage(e.target.value);
-            }}
             type="text"
             className="form-control message"
             id="exampleInputPassword1"
