@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+.user-container {
+  margin-top: 8%;
+}
+
+.user-container .user {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.159);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 3%;
+  font-family: 'Viga', sans-serif;
+  border-radius: 10px;
+}
+
+.user-container .user .user-img_div .user-img {
+  height: 200px;
+  width: 100%;
+  border-radius: 50%;
+  -webkit-animation: initial-image 2s;
+          animation: initial-image 2s;
+}
+
+.user-container .user .user-info {
+  padding-top: 4%;
+  -webkit-animation: initial-text 2s;
+          animation: initial-text 2s;
+}
+
+.user-container .repositories .repositories-title {
+  font-family: 'Viga', sans-serif;
+  margin-top: 2%;
+  text-align: center;
+  color: white;
+}
+
+.user-container .repositories .list-repositories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.user-container .repositories .list-repositories .repository {
+  -webkit-animation: ease-in repository 1s;
+          animation: ease-in repository 1s;
+  margin-top: 5%;
+  overflow: hidden;
+  width: 40%;
+  padding: 3%;
+  text-align: center;
+  border: solid 2px white;
+  color: white;
+  background-color: rgba(255, 247, 247, 0.165);
+}
+
+.user-container .repositories .list-repositories .repository a {
+  color: white;
+}
+
+.user-container .repositories .list-repositories .repository:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media only screen and (max-width: 420px) {
+  .user-container {
+    padding-top: 20%;
+  }
+  .user-container .user {
+    text-align: center;
+  }
+  .user-container .repositories .repositories-title {
+    font-family: 'Viga', sans-serif;
+    margin-top: 2%;
+    text-align: center;
+    color: white;
+  }
+  .user-container .repositories .list-repositories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 5%;
+  }
+  .user-container .repositories .list-repositories .repository {
+    margin-top: 5%;
+    overflow: hidden;
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+    border: solid 2px white;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.165);
+  }
+}
+
+@-webkit-keyframes repository {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes repository {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=github.css.map */

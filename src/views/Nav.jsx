@@ -42,9 +42,9 @@ const Nav = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="true">
-                  Github
-                </a>
+                <Link to="/github">
+                  <button className="nav-link">Github</button>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link to="/contact">
