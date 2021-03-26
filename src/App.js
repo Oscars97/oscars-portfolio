@@ -3,6 +3,7 @@ import './styles/App.css';
 import Navbar from "./views/Nav.jsx";
 import Main from "./views/Main.js";
 import Contact from "./views/Contact.js";
+import Github from "./views/Github.js";
 import {
   BrowserRouter as Router,
   Switch,
@@ -44,6 +45,9 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <Contact/>
+          </Route>
+          <Route exact path="/github">
+            <Github/>
           </Route>
         </Switch>
     </Router>

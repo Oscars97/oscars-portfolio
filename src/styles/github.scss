@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+.user-container{
+    margin-top: 8%;
+    
+    
+    .user{
+        color: white;
+        background-color: rgba(255, 255, 255, 0.159);
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 3%;
+        font-family: 'Viga', sans-serif;
+        border-radius: 10px;
+        .user-img_div{
+            
+            .user-img{
+                height: 200px;
+                width: 100%;
+                border-radius: 50%;
+                animation: initial-image 2s;
+            }
+        }
+        .user-info{
+            padding-top: 4%;
+            animation: initial-text 2s;
+        }
+    }
+    .repositories{
+
+        .repositories-title{
+            font-family: 'Viga', sans-serif;
+            margin-top: 2%;
+            text-align: center;
+            color: white;
+        }
+        .list-repositories{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 5%;
+
+            .repository{
+                animation: ease-in repository 1s;
+                margin-top: 5%;
+                overflow: hidden;
+                width: 40%;
+                padding: 3%;
+                text-align: center;
+                border: solid 2px white;
+                color: white;
+                background-color: rgba(255, 247, 247, 0.165);
+
+                a{
+                    color: white;
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    // box-shadow: 5px 10px rgb(2, 2, 2);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 420px){
+        .user-container{
+            padding-top: 20%;
+
+            .user{
+                text-align: center;
+            }
+
+            .repositories{
+
+                .repositories-title{
+                    font-family: 'Viga', sans-serif;
+                    margin-top: 2%;
+                    text-align: center;
+                    color: white;
+                }
+                .list-repositories{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    margin-bottom: 5%;
+        
+                    .repository{
+                        margin-top: 5%;
+                        overflow: hidden;
+                        width: 100%;
+                        padding: 3%;
+                        text-align: center;
+                        border: solid 2px white;
+                        color: white;
+                        background-color: rgba(255, 255, 255, 0.165);
+
+                        
+                    }
+                }
+            }
+        }
+}
+@keyframes repository{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+

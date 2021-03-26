@@ -1,0 +1,13 @@
+.repository-container {
+  width: 80%;
+  height: 450px;
+  margin-top: 3%;
+}
+
+.repository-container img {
+  height: 100px;
+  width: 50%;
+  -webkit-transform: translate(50%, 20%);
+          transform: translate(50%, 20%);
+}
+/*# sourceMappingURL=repository.css.map */
