@@ -4,6 +4,7 @@ import Navbar from "./views/Nav.jsx";
 import Main from "./views/Main.js";
 import Contact from "./views/Contact.js";
 import Github from "./views/Github.js";
+import Footer from "./views/Footer";
 import {
   BrowserRouter as Router,
   Switch,
@@ -50,6 +51,7 @@ function App() {
             <Github/>
           </Route>
         </Switch>
+        <Footer/>
     </Router>
   );
 }
