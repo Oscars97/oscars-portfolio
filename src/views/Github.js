@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/github.scss";
 // import Repository from "./Repository";
 const Github = () => {
-  const [userInfo, setUserInfo] = useState({});
+  const [userInfo, setUserInfo] = useState("");
   const [repositories, setRepositories] = useState([]);
   useEffect(() => {
     fetch(`https://api.github.com/users/oscars97`)
