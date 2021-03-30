@@ -4,7 +4,29 @@ import "../styles/github.scss";
 const Github = () => {
   const [userInfo, setUserInfo] = useState("");
   const [repositories, setRepositories] = useState([]);
+  const [scrollY, setScrollY] = useState(0);
+  const [repositoryClass, setRepositoryClass] = useState("list-repositories");
+  
+  const addEffect = ()=>{
+    setRepositoryClass("list-repositories effect");
+  };
+  
+  const removeEffect = ()=>{
+    setRepositoryClass("list-repositories none")
+  }
+  
+  
   useEffect(() => {
+    window.addEventListener("scroll", ()=>{
+      setScrollY(window.scrollY);
+      if(scrollY>=250){
+        addEffect();
+      }else{
+        removeEffect();
+      }
+    })
+
+
     fetch(`https://api.github.com/users/oscars97`)
       .then((response) => response.json())
       .then((data) => {
@@ -19,13 +41,12 @@ const Github = () => {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setRepositories(data);
       })
       .catch((error) => {
         console.error("Error:", error);
       });
-  }, []);
+  }, [scrollY]);
   return (
     <div className="container user-container">
       {/* we are including the info from github */}
@@ -41,7 +62,7 @@ const Github = () => {
       </div>
       <div className="repositories">
         <h1 className="repositories-title">REPOSITORIES</h1>
-        <div className="list-repositories">
+        <div className={repositoryClass}>
           {/* {repositories.map((item,i)=>{
                 return <Repository key={i} id={i} name={item.name} url={item.html_url} created_at={item.created_at} language={item.language} />
             })} */}
