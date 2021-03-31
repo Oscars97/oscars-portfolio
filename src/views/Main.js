@@ -1,9 +1,10 @@
+/*jshint esversion: 6 */
 import React from "react";
 import "../styles/main.scss";
 import image from "../img/image.png";
 const Main = () => {
   return (
-    <div className="container main-container">
+    <main className="container main-container">
       <div className="content-main row">
         <div className="col-6 info">
           <h5>Hi, this is</h5>
@@ -64,7 +65,7 @@ const Main = () => {
           <img src={image} alt="something" />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

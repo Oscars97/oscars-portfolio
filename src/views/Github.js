@@ -48,7 +48,7 @@ const Github = () => {
       });
   }, [scrollY]);
   return (
-    <div className="container user-container">
+    <main className="container user-container">
       {/* we are including the info from github */}
       <div className="user">
         <div className="user-img_div">
@@ -85,7 +85,7 @@ const Github = () => {
           })}
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

@@ -27,7 +27,7 @@
             padding-top: 4%;
             animation: initial-text 2s;
         }
-    }
+    } 
     .repositories{
 
         .repositories-title{
@@ -72,10 +72,18 @@
 }
 @media only screen and (max-width: 420px){
         .user-container{
-            padding-top: 20%;
+            padding-top: 30%;
 
             .user{
                 text-align: center;
+
+                .user-img_div{
+                    
+                    .user-img{
+                        width: 70%;
+                        height: 120px;
+                    }
+                }
             }
 
             .repositories{
