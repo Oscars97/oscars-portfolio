@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 .user-container{
     margin-top: 8%;
-    
+     
     
     .user{
         color: white;
@@ -27,7 +27,7 @@
             padding-top: 4%;
             animation: initial-text 2s;
         }
-    }
+    } 
     .repositories{
 
         .repositories-title{
@@ -36,13 +36,14 @@
             text-align: center;
             color: white;
         }
+        
         .list-repositories{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
             margin-bottom: 5%;
-
+            opacity: 0;
             .repository{
                 animation: ease-in repository 1s;
                 margin-top: 5%;
@@ -53,7 +54,7 @@
                 border: solid 2px white;
                 color: white;
                 background-color: rgba(255, 247, 247, 0.165);
-
+                
                 a{
                     color: white;
                 }
@@ -63,14 +64,26 @@
                 }
             }
         }
+        .effect{
+            opacity: 1;
+            animation: enter 1s;
+        }
     }
 }
 @media only screen and (max-width: 420px){
         .user-container{
-            padding-top: 20%;
+            padding-top: 30%;
 
             .user{
                 text-align: center;
+
+                .user-img_div{
+                    
+                    .user-img{
+                        width: 70%;
+                        height: 120px;
+                    }
+                }
             }
 
             .repositories{
@@ -115,4 +128,14 @@
         opacity: 1;
     }
 }
+
+@keyframes enter{
+    0%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 
