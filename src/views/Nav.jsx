@@ -1,7 +1,23 @@
-import React from "react";
+import React,{ useState, useEffect, useRef } from "react";
 import "../styles/nav.scss";
 import { Link } from "react-router-dom";
+
 const Nav = () => {
+  const [newClass, setNewClass] = useState("nav-link");
+  let scrollY = useRef(0);
+  
+  useEffect(() =>{
+    window.addEventListener("scroll", ()=>{
+      scrollY.current = window.scrollY;
+      console.log("scrollY: "+scrollY.current)
+      if(scrollY.current > 0){
+        setNewClass("nav-link cool");
+        console.log("Yes")
+      }else{
+        setNewClass("nav-link")
+      }
+    })
+  },[scrollY])
   return (
     <div>
       <nav className="navbar fixed-top container navbar-expand-lg navbar-dark">
@@ -19,7 +35,7 @@ const Nav = () => {
         <li className="nav-item brand">
           <Link to="/">
             <button className="nav-link">
-              <h1>Óscar Sánchez</h1>
+              <h1>ÓscarS</h1>
             </button>
           </Link>
         </li>
@@ -33,7 +49,7 @@ const Nav = () => {
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
               <li className="nav-item active">
                 <Link to="/">
-                  <button className="nav-link">Home</button>
+                  <button className={newClass}>Home</button>
                 </Link>
               </li>
               <li className="nav-item">

@@ -1,8 +1,9 @@
-import React from 'react'
+//jshint esversion:6
+import React from 'react';
 import "../styles/footer.scss";
 const Footer = () => {
     return (
-        <div className="footer-container">
+        <footer className="footer-container">
             <div className="social-links">
                 <div className="social-icon">
                     <a
@@ -53,7 +54,7 @@ const Footer = () => {
         <div className="copyright">
             <p>Copyright © 2021 All Rights Reserved</p>
         </div>
-    </div>
+    </footer>
         
     )
 }
