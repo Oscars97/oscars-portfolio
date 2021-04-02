@@ -1,0 +1,13 @@
+.typewriter{
+    text-align: center;
+    width: 60%;
+    margin: 13% auto;
+}
+@media (max-width:420px){
+    .typewriter{
+        text-align: center;
+        width: 60%;
+        margin: 50% auto;
+        height: 60vh;
+    }
+}
