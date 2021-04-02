@@ -5,6 +5,7 @@ import Main from "./views/Main.js";
 import Contact from "./views/Contact.js";
 import Github from "./views/Github.js";
 import Footer from "./views/Footer";
+import Curriculum from "./views/Curriculum";
 import {
   BrowserRouter as Router,
   Switch,
@@ -44,6 +45,9 @@ function App() {
           </Route> */}
           <Route exact path="/">
             <Main/>
+          </Route>
+          <Route exact path="/curriculum">
+            <Curriculum/>
           </Route>
           <Route exact path="/contact">
             <Contact/>
