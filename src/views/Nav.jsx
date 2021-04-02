@@ -1,23 +1,10 @@
-import React,{ useState, useEffect, useRef } from "react";
+import React,{ useState} from "react";
 import "../styles/nav.scss";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
-  const [newClass, setNewClass] = useState("nav-link");
-  let scrollY = useRef(0);
+  const [newClass] = useState("nav-link");
   
-  useEffect(() =>{
-    window.addEventListener("scroll", ()=>{
-      scrollY.current = window.scrollY;
-      console.log("scrollY: "+scrollY.current)
-      if(scrollY.current > 0){
-        setNewClass("nav-link cool");
-        console.log("Yes")
-      }else{
-        setNewClass("nav-link")
-      }
-    })
-  },[scrollY])
   return (
     <div>
       <nav className="navbar fixed-top container navbar-expand-lg navbar-dark">
@@ -53,9 +40,9 @@ const Nav = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="true">
-                  Curriculum
-                </a>
+                <Link to="/curriculum">
+                  <button className="nav-link">Curriculum</button>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link to="/github">
