@@ -7,7 +7,7 @@ const Curriculum = () => {
             textStyle={{ fontFamily: 'Red Hat Display', "color":"white" }}
             startDelay={100}
             cursorColor="white"
-            text="COMING OUT..."
+            text="Currently working on this section..."
             typeSpeed={100}
             scrollArea={document}
           />
