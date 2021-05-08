@@ -5,7 +5,7 @@ import Main from "./views/Main.js";
 import Contact from "./views/Contact.js";
 import Github from "./views/Github.js";
 import Footer from "./views/Footer";
-import Curriculum from "./views/Curriculum";
+import Curriculum from "./views/Curriculum.jsx";
 import {
   BrowserRouter as Router,
   Switch,
