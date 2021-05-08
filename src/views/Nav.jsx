@@ -40,7 +40,7 @@ const Nav = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/curriculum">
+                <Link to="/curriculum#curriculum">
                   <button className="nav-link">Curriculum</button>
                 </Link>
               </li>

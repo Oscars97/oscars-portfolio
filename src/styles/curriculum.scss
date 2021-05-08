@@ -1,7 +1,38 @@
-.typewriter{
-    text-align: center;
-    width: 60%;
-    margin: 13% auto;
+.information{
+    // text-align: center;
+    // width: 60%;
+    margin-top: 7%;
+    color: white;
+
+    .user{
+        color: white;
+        background-color: rgba(22, 6, 6, 0.159);
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 3%;
+        font-family: 'Viga', sans-serif;
+        border-radius: 10px;
+        .user-img_div{
+            
+            .user-img{
+                height: 200px;
+                width: 100%;
+                border-radius: 50%;
+                animation: initial-image 2s;
+            }
+        }
+        .user-info{
+            padding-top: 4%;
+            animation: initial-text 2s;
+        }
+    } 
+    .curriculum-body{
+        text-align: center;
+        animation: initial-text 2s;
+    }
 }
 @media (max-width:420px){
     .typewriter{
@@ -9,5 +40,15 @@
         width: 60%;
         margin: 50% auto;
         height: 60vh;
+    }
+    .user{
+        margin-top: 30%;
+    }
+    .curriculum-body{
+        text-align: center;
+        animation: initial-text 2s;
+        img{
+            width: 80%;
+        }
     }
 }

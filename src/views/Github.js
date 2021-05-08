@@ -48,7 +48,7 @@ const Github = () => {
       });
   }, [scrollY]);
   return (
-    <main className="container user-container">
+    <main className="container user-container" id="github">
       {/* we are including the info from github */}
       <div className="user">
         <div className="user-img_div">
