@@ -43,7 +43,7 @@
             flex-wrap: wrap;
             justify-content: space-around;
             margin-bottom: 5%;
-            opacity: 0;
+            
             .repository{
                 animation: ease-in repository 1s;
                 margin-top: 5%;
@@ -66,7 +66,7 @@
         }
         .effect{
             opacity: 1;
-            animation: enter 1s;
+           
         }
     }
 }

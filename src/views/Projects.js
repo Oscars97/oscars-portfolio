@@ -1,43 +1,16 @@
 import React from 'react'
-
+import spotify from "../img/spotify-react.JPG";
 const Projects = () => {
+  const style={
+    "height":"300px", 
+    "width":"400px"
+    }
+
     const projects = [
     {
       "title": "Spotify with React",
       "url":"https://react-spotify-eight.vercel.app/",
-      "img":"blob:https://vercel.com/344cb1ae-c134-4b6f-902f-9ca3e3072ca0",
-      "description": "",
-      "id": 1,
-
-    },
-    {
-      "title": "Random Cards",
-      "url":"",
-      "img":"",
-      "description": "",
-      "id": 1,
-
-    },
-    {
-      "title": "",
-      "url":"",
-      "img":"",
-      "description": "",
-      "id": 1,
-
-    },
-    {
-      "title": "",
-      "url":"",
-      "img":"",
-      "description": "",
-      "id": 1,
-
-    }
-    ,{
-      "title": "",
-      "url":"",
-      "img":"",
+      "img":spotify,
       "description": "",
       "id": 1,
 
@@ -45,7 +18,14 @@ const Projects = () => {
   ];
     return (
         <div>
-            
+            {projects.map((item,index)=>{
+            return(
+              <div key={item.id}>
+                <h1>{item.title}</h1>
+                <a  rel="noreferrer" href={item.url} target="_blank">DEMO</a>
+                <img style={style} src={item.img} alt="something"/>
+              </div>
+            )})}
         </div>
     )
 }
