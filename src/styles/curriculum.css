@@ -1,0 +1,65 @@
+.information {
+  margin-top: 7%;
+  color: white;
+}
+
+.information .user {
+  color: white;
+  background-color: rgba(22, 6, 6, 0.159);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 3%;
+  font-family: 'Viga', sans-serif;
+  border-radius: 10px;
+}
+
+.information .user .user-img_div .user-img {
+  height: 200px;
+  width: 100%;
+  border-radius: 50%;
+  -webkit-animation: initial-image 2s;
+          animation: initial-image 2s;
+}
+
+.information .user .user-info {
+  padding-top: 4%;
+  -webkit-animation: initial-text 2s;
+          animation: initial-text 2s;
+}
+
+.information .curriculum-body {
+  text-align: center;
+  -webkit-animation: initial-text 2s;
+          animation: initial-text 2s;
+}
+
+@media (max-width: 420px) {
+  .typewriter {
+    text-align: center;
+    width: 60%;
+    margin: 50% auto;
+    height: 60vh;
+  }
+  .user {
+    margin-top: 30%;
+  }
+  .curriculum-body {
+    text-align: center;
+    -webkit-animation: initial-text 2s;
+            animation: initial-text 2s;
+  }
+  .curriculum-body img {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=curriculum.css.map */

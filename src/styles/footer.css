@@ -1,0 +1,68 @@
+.footer-container {
+  height: 200px;
+  color: white;
+}
+
+.footer-container .copyright {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-container .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.footer-container .social-links .social-icon {
+  padding-top: 30%;
+}
+
+.footer-container .social-links .social-icon a {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.footer-container .social-links .social-icon a:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 420px) {
+  .footer-container {
+    height: 200px;
+    color: white;
+  }
+  .footer-container .copyright {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-container .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer-container .social-links .social-icon {
+    padding-top: 20%;
+  }
+  .footer-container .social-links .social-icon a {
+    color: white;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

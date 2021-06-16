@@ -1,0 +1,45 @@
+.projects-container{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .project{
+        background-color: rgba(201, 201, 201, 0.19);
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 2% 0 5% 0;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 4%;
+        img{
+            width: 70%;
+            height: 50vh;
+            margin-bottom: 5%;
+            &:hover{
+                transform: scale(1.4);
+                transition: ease-in 1s;
+                color: blue;
+            }
+        }   
+        a{  
+
+            margin-top: 5%;
+            background: red;
+            padding: 2%;
+            border-radius: 10px;
+            color: white;
+             
+        }
+        
+        .github{
+            background-color: green;
+            margin-left: 10%;
+        }
+    }
+}
+@media only screen and (max-width: 420px){
+    .projects-container{
+        margin-top: 35%;
+    }
+       
+}

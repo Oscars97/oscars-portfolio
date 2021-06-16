@@ -81,12 +81,20 @@
           transform: scale(1.1);
 }
 
+.user-container .repositories .effect {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 420px) {
   .user-container {
-    padding-top: 20%;
+    padding-top: 30%;
   }
   .user-container .user {
     text-align: center;
+  }
+  .user-container .user .user-img_div .user-img {
+    width: 70%;
+    height: 120px;
   }
   .user-container .repositories .repositories-title {
     font-family: 'Viga', sans-serif;
@@ -138,6 +146,24 @@
   }
   50% {
     opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes enter {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes enter {
+  0% {
+    opacity: 0.7;
   }
   100% {
     opacity: 1;

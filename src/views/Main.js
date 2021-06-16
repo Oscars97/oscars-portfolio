@@ -2,6 +2,7 @@
 import React from "react";
 import "../styles/main.scss";
 import image from "../img/image.png";
+import {Link} from "react-router-dom";
 const Main = () => {
   return (
     <main className="container main-container">
@@ -59,7 +60,7 @@ const Main = () => {
               </a>
             </div>
           </div>
-          <button className="btn btn-block button-projects">MY WORK</button>
+          <Link to="/projects" className="btn btn-block button-projects">MY WORK</Link>
         </div>
         <div className="col-6 image-main">
           <img src={image} alt="something" />
