@@ -1,0 +1,56 @@
+.projects-container {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects-container .project {
+  background-color: rgba(201, 201, 201, 0.19);
+  text-align: center;
+  color: white;
+  padding: 2% 0 5% 0;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 4%;
+}
+
+.projects-container .project img {
+  width: 70%;
+  height: 50vh;
+  margin-bottom: 5%;
+}
+
+.projects-container .project img:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+  color: blue;
+}
+
+.projects-container .project a {
+  margin-top: 5%;
+  background: red;
+  padding: 2%;
+  border-radius: 10px;
+  color: white;
+}
+
+.projects-container .project .github {
+  background-color: green;
+  margin-left: 10%;
+}
+
+@media only screen and (max-width: 420px) {
+  .projects-container {
+    margin-top: 35%;
+  }
+}
+/*# sourceMappingURL=projects.css.map */
