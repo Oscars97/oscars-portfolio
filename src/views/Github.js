@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/github.scss";
+import Fade from "../../node_modules/react-reveal/Fade";
 // import Repository from "./Repository";
 const Github = () => {
   const [userInfo, setUserInfo] = useState("");
@@ -19,7 +20,7 @@ const Github = () => {
   useEffect(() => {
     window.addEventListener("scroll", ()=>{
       setScrollY(window.scrollY);
-      if(scrollY>=250){
+      if(scrollY!==0){
         addEffect();
       }else{
         removeEffect();
@@ -49,11 +50,12 @@ const Github = () => {
   }, [scrollY]);
   return (
     <main className="container user-container" id="github">
+      
       {/* we are including the info from github */}
       <div className="user">
-        <div className="user-img_div">
+        {/* <div className="user-img_div">
           <img className="user-img" src={userInfo.avatar_url} alt="user" />
-        </div>
+        </div> */}
         <div className="user-info">
           <h1>{userInfo.name}</h1>
           <h2>{userInfo.bio}</h2>
@@ -66,10 +68,11 @@ const Github = () => {
           {/* {repositories.map((item,i)=>{
                 return <Repository key={i} id={i} name={item.name} url={item.html_url} created_at={item.created_at} language={item.language} />
             })} */}
-
+          
           {repositories.map((item, i) => {
             return (
               <div key={i} className="repository">
+              <Fade>
                 <h1>{item.name}</h1>
                 <a
                   className="btn btn-danger"
@@ -80,11 +83,14 @@ const Github = () => {
                   Repository
                 </a>
                 <p>Language: {item.language}</p>
+                </Fade>
               </div>
             );
           })}
+          
         </div>
       </div>
+      
     </main>
   );
 };
